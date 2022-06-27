@@ -16,7 +16,7 @@ public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
 		if(authentication !=null && authentication.getDetails() !=null) {
 			request.getSession().invalidate();
 			response.setStatus(response.SC_OK);
-			response.sendRedirect("SistemaPruebasPino");
+			response.sendRedirect("SistemaPruebasPino/Login");
 		}
 	}
 }
